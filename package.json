@@ -8,13 +8,15 @@
   "scripts": {
     "test": "live-server --open=./SpecRunner.html --port=8081",
     "start": "live-server",
-    "build": "webpack -d --watch"
+    "build": "webpack -d --watch",
+    "live-watch": "concurrently \"live-server\" \"npm run watch\""
   },
   "dependencies": {
     "babel-core": "6.24.1",
     "babel-plugin-react": "1.0.0",
     "babel-preset-react": "6.24.1",
     "bootstrap": "^4.0.0-alpha.2",
+    "build": "^0.1.4",
     "enzyme-redux": "^0.1.7",
     "jquery": "^2.2.1",
     "lodash": "^4.6.1",
