@@ -11,7 +11,7 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-var SearchContainer = () => {};
+var SearchContainer = connect(null, mapDispatchToProps)(Search);
 
 //TODO: define a SearchContainer component which will hook up your action
 // dispatchers with your search component props.
@@ -19,4 +19,4 @@ var SearchContainer = () => {};
 //state and dispatch mappings.
 
 
-export default connect(null, mapDispatchToProps)(SearchContainer);
+export default SearchContainer;
